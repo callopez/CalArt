@@ -1,0 +1,136 @@
+/* Inicia Header */
+.navfixed{
+position: fixed;
+width: 100%;
+z-index: 100;
+}
+
+#logo{
+    width: 8rem;
+    height: auto;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+  
+}
+
+#busto{
+    width: 98vw;
+    grid-column: 1/9;
+    grid-row: 1/9;
+}
+
+#bannlogo{
+    width: 90%;
+    height: auto;
+    grid-column: 7/9;
+    grid-row: 8/9;
+    opacity: 25%;
+}
+/* termina header */
+/* estilos de las tarjetas de fotos */
+#h6{
+    margin-top: 2rem;
+    height: 10%;
+    font-size: larger;
+}
+p{
+    padding: 20%;
+}
+
+.col-md-4{
+    margin-bottom: 1rem;
+}
+h4{
+    margin: 2rem;
+    margin-top: 4rem;
+    text-align: center;
+    color: lightgray;
+    font-size: medium;
+  
+}
+.fototarjeta{
+    width: 100%;
+    height: auto;
+    transition: all 50ms ease-out;
+}
+
+
+.figure{
+position: relative;
+width: 100%;
+cursor: pointer;
+}
+
+.capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(128, 128, 128,0.4);
+    visibility: hidden;
+    text-align: center;
+    opacity: 25%;
+}
+.figure:hover> .capa{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* terminana los estilos de las tarjetas de fotos */
+/* inicia sesión sobre mi */
+
+.contenedormi{
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,25vh);
+}
+.cris{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    width: 100%;
+    grid-column: 50%;
+    grid-row: 50%;
+    width: 50vw;
+    height: auto;
+}
+#cris1{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    width: 102%;
+    height: auto;
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+#cris2{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    width: 100%;
+    height: auto;
+    grid-column: 3/6;
+    grid-row: 4/6;    
+}
+#pmi1{ 
+    margin-top: auto;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    grid-column: 3/6;
+    grid-row: 1/3;
+}
+#pmi2{
+    margin-top: auto;
+    margin-bottom: 25%;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    grid-column: 1/3;
+    grid-row: 4/6;
+}
