@@ -13,6 +13,7 @@ z-index: 100;
 #logo{
     width: 8rem;
     height: auto;
+
 }
 
 .contenedor{
@@ -22,7 +23,7 @@ z-index: 100;
 }
 
 #busto{
-    width: 98vw;
+    width: 100%;
     grid-column: 1/9;
     grid-row: 1/9;
 }
@@ -33,6 +34,7 @@ z-index: 100;
     grid-column: 7/9;
     grid-row: 8/9;
     opacity: 25%;
+
 }
 /* termina header */
 /* estilos de las tarjetas de fotos */
@@ -152,135 +154,46 @@ cursor: pointer;
 
 /* inicia fotografía */
   
-  .foto{
+.slider {
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+.slider ul {
+    display: flex;
+    padding: 0px;
+    width: 300%;
 
-    width: 400px;
+/* para el cambio infinoto:  */
+    animation: cambio 18s infinite;
+/* para que la rotación se alterne:  */
+    animation-direction: alternate;
+/* para que la animación inicie lento : */
+    animation-timing-function: ease-in;
+
+}
+
+/* .slider li {
+    width: 100%;
+    list-style: none;
+} */
+.jne{
+    width: 100%;
     height: auto;
-  }
+}
 
-  
-  ul, li {
-      padding: 0;
-      margin: 0;
-      list-style: none;
-  }
-  
-  ul.slider{
-    position: relative;
-    width: 550px;
-    height: 300px;
-  }
-  
-  ul.slider li {
-      position: absolute;
-      left: 0px;
-      top: 0px;
-      opacity: 0;
-      width: inherit;
-      height: inherit;
-      transition: opacity .5s;
-      background:#fff;
-  }
-  
-  ul.slider li img{
-    margin-top: 40px;
-    width: 550;
-    height: 300px;
-    object-fit: cover;
-  }
-  
-  ul.slider li:first-child {
-      opacity: 1; /*Mostramos el primer <li>*/
-  }
-  
-  ul.slider li:target {
-      opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
-  }
-  
-  .menu{
-    text-align: center;
-    margin: 20px;
-  }
-  
-  .menu li{
-    display: inline-block;
-    text-align: center;
-  }
-  
-  .menu li a{
-    margin-top: 40px;
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    background-color: grey;
-    padding: 10px;
-    width: 10px;
-    height: 10px;
-    font-size: 20px;
-    border-radius: 100%;
-  }
-  @media screen and (min-width:768px){
-    .foto{
-        /* grid-template-columns: repeat(4,1fr);
-        grid-template-rows: repeat(4,25vh); */
-    }
-    .jne{
-        width: 1350px;
-        height: 920px;
+@keyframes cambio {
+    0% {margin-left: 0;}
+    30% {margin-left: 0;}
 
-    }
-    
-    .b3{
+    35% {margin-left:  -100%;}
+    65% {margin-left:  -100%;}
 
-        padding-left:400px;
-        }
-      #bo1{
-        position: absolute;
-        margin-top: 700px;
-        margin-left: 40px;
-        margin-left: 40px;
-        display: inline-block;
-        color: white;
-        text-decoration: none;
-        background-color: grey;
-        padding: 10px;
-        width: 10px;
-        height: 10px;
-        font-size: 20px;
-        border-radius: 100%;
-        opacity: 100%;
-      }
-      #bo2{
-        position: absolute;
-        margin-top: 680px;
-        margin-left: 200px;
-        display: inline-block;
-        color: white;
-        text-decoration: none;
-        background-color: grey;
-        padding: 10px;
-        width: 10px;
-        height: 10px;
-        font-size: 20px;
-        border-radius: 100%;
-        opacity: 100%;
-      }
-      #bo3{
-        position: absolute;
-        margin-top: 655px;
-        margin-left: 400px;
-        display: inline-block;
-        color: white;
-        text-decoration: none;
-        background-color: grey;
-        padding: 10px;
-        width: 10px;
-        height: 10px;
-        font-size: 20px;
-        border-radius: 100%;
-        opacity: 100%;
-      }
+    70% { margin-left: -200%;}
+    100% { margin-left: -200%;}
  
-  }
+
+}
+
 
   /* termina fotografía */
