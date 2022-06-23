@@ -51,6 +51,7 @@ p{
     margin-bottom: 1rem;
 }
 h4{
+
     margin: 2rem;
     margin-top: 4rem;
     text-align: center;
@@ -60,8 +61,10 @@ h4{
 }
 .fototarjeta{
     width: 100%;
-    height: auto;
-    transition: all 50ms ease-out;
+    height: 200px;
+    object-fit: contain;
+/*     transition: all 50ms ease-out; */
+
 }
 
 
@@ -76,7 +79,7 @@ cursor: pointer;
     top: 0;
     width: 100%;
     height: 100%;
-    background: rgb(128, 128, 128,0.4);
+    background: rgba(255, 255, 255, 0.4);
     visibility: hidden;
     text-align: center;
     opacity: 25%;
@@ -123,7 +126,7 @@ cursor: pointer;
         margin-top: 5rem;
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(2,25vh);
+        grid-template-rows: repeat(3,25vh);
 
     }
 
@@ -133,6 +136,7 @@ cursor: pointer;
     } */
 
     #pmi2{
+
         text-align: center;
         border-left: 0;
         width: 100%;
@@ -145,13 +149,19 @@ cursor: pointer;
 }
 
 /* inicia fotografía */
-  
+  #hfoto{
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+  }
 
 
 .foto {
     display: flex;
     padding: 0px;
     width: 300%;
+    height: ;
+    
 
 /* para el cambio infinoto:  */
     animation: cambio 18s infinite;
