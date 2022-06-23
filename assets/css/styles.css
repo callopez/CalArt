@@ -86,17 +86,15 @@ cursor: pointer;
 /* inicia sobre mi 2 diseño mobile */
 
 .cris{
-    width:400px ;
+    padding: 30px;
+    width: 341px;
     height: auto;
-    margin-left: 44px;
-    margin-top: 40px;
 }
 .crisp{
-    width:400px ;
+    text-align: center;
+    padding: 30px;
+    width: 341px;
     height: auto;
-    margin-left: 44px;nter;
-    margin-top: 10px;
-    margin-bottom: 5px;
 }
 
 /* sobre mi fin diseño mobile  */
@@ -117,6 +115,7 @@ cursor: pointer;
     #cris1{
         width: 550px;
         height: auto;
+
     }
     #pmi1{
         margin: 25%;
