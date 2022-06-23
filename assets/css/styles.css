@@ -87,7 +87,7 @@ cursor: pointer;
 
 .cris{
     padding: 30px;
-    width: 341px;
+    width: 400px;
     height: auto;
 }
 .crisp{
@@ -123,9 +123,9 @@ cursor: pointer;
         display: flex;
         width: 450px;
         height: auto;
-        /* termina sobre mi */
-        /* inicia statement */
     }
+            /* termina sobre mi */
+        /* inicia statement */
     .contenedorinte{
         display: flex;
         margin-top: 5rem;
@@ -138,94 +138,86 @@ cursor: pointer;
         width: 550px;
         height: auto;
     }
+
     #pmi2{
         margin: 25%;
         text-align: center;
         display: flex;
         width: 450px;
-        height: auto;
+        height: auto;;
         
     }
            /* termina statement */
 }
 
+/* inicia fotografía */
+  
+  .foto{
 
-
-
-
-
-/* terminana los estilos de las tarjetas de fotos */
-/* inicia sesión sobre mi */
-
-/* .contenedormi{
-    margin-top: 5rem;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(4,25vh);
-}
-.cris{
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
-    width: 100%;
-    grid-column: 50%;
-    grid-row: 50%;
-    width: 50vw;
+    width: 400px;
     height: auto;
-}
-#cris1{
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
-    width: 102%;
-    height: auto;
-    grid-column: 1/3;
-    grid-row: 1/3;
-}
-#cris2{
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
-    width: 100%;
-    height: auto;
-    grid-column: 3/6;
-    grid-row: 4/6;    
-}
-#pmi1{ 
-    margin-top: auto;
+  }
+
+  
+  ul, li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+  }
+  
+  ul.slider{
+    position: relative;
+    width: 550px;
+    height: 300px;
+  }
+  
+  ul.slider li {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      opacity: 0;
+      width: inherit;
+      height: inherit;
+      transition: opacity .5s;
+      background:#fff;
+  }
+  
+  ul.slider li img{
+    margin-top: 40px;
+    width: 550;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  ul.slider li:first-child {
+      opacity: 1; /*Mostramos el primer <li>*/
+  }
+  
+  ul.slider li:target {
+      opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+  }
+  
+  .menu{
     text-align: center;
-    width: 100%;
-    height: auto;
-    grid-column: 3/3;
-    grid-row: 1/1;
-}
-#pmi2{
-    margin-top: auto;
-    margin-bottom: 25%;
+    margin: 20px;
+  }
+  
+  .menu li{
+    display: inline-block;
     text-align: center;
-    width: 100%;
-    height: auto;
-    grid-column: 1/1;
-    grid-row: 4/4;
-}
-@media screen and (min-width:992px){
-    #cris1{
-        margin-left: 30px;
-        position: absolute;
-        width: 287px;
-        height: auto;
-    }
-    #pmi1{
-        margin: 20px;
-        margin-left: 30px;
-        text-align: center;
-        width: 100%;
-        height: auto;
-        grid-column: 1/2;
-        grid-row: 2/2;
-    }
-    
-}
-@media screen {
-    
-} */
+  }
+  
+  .menu li a{
+    margin-top: 40px;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: grey;
+    padding: 10px;
+    width: 10px;
+    height: 10px;
+    font-size: 20px;
+    border-radius: 100%;
+  }
+
+  /* termina fotografía */
