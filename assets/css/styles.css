@@ -85,68 +85,60 @@ cursor: pointer;
     opacity: 1;
     visibility: visible;
 }
+
+/* terminanan estilos tarjetas fotos  */
+
+        /* inicia statement */
 /* inicia sobre mi 2 diseño mobile */
 
+
 .cris{
-    padding: 30px;
-    width: 400px;
+
+    width: 100%;
     height: auto;
+/*     padding: 30px;
+    width: 400px;
+    height: auto; */
 }
 .crisp{
     text-align: center;
-    padding: 30px;
-    width: 341px;
+    border-left: 0;
+    width: 200%;
     height: auto;
+    grid-column: 2/2;
+    grid-row: 1/2;
 }
 
-/* sobre mi fin diseño mobile  */
+/*  fin diseño mobile  */
 
-/* inicia sobre mi  */
 
-@media screen and (min-width:768px){
 
-    .contenedormi{
-        display: flex;
-        margin-top: 5rem;
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        grid-template-rows: repeat(4,25vh);
+@media screen and (min-width:750px){
 
-    }
+    
 
-    #cris1{
-        width: 550px;
-        height: auto;
 
-    }
-    #pmi1{
-        margin: 25%;
-        text-align: center;
-        display: flex;
-        width: 450px;
-        height: auto;
-    }
-            /* termina sobre mi */
-        /* inicia statement */
     .contenedorinte{
         display: flex;
         margin-top: 5rem;
         display: grid;
-        grid-template-columns: repeat(4,1fr);
-        grid-template-rows: repeat(4,25vh);
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,25vh);
 
     }
-    #cris2{
-        width: 550px;
+
+/*     #cris2{
+        width: 90vh;
         height: auto;
-    }
+    } */
 
     #pmi2{
-        margin: 25%;
         text-align: center;
-        display: flex;
-        width: 450px;
-        height: auto;;
+        border-left: 0;
+        width: 100%;
+        height: auto;
+        grid-column: 2/2;
+        grid-row: 1/2;
         
     }
            /* termina statement */
@@ -154,12 +146,9 @@ cursor: pointer;
 
 /* inicia fotografía */
   
-.slider {
-    width: 95%;
-    margin: auto;
-    overflow: hidden;
-}
-.slider ul {
+
+
+.foto {
     display: flex;
     padding: 0px;
     width: 300%;
@@ -173,10 +162,7 @@ cursor: pointer;
 
 }
 
-/* .slider li {
-    width: 100%;
-    list-style: none;
-} */
+
 .jne{
     width: 100%;
     height: auto;
