@@ -185,7 +185,7 @@ cursor: pointer;
   ul.slider li img{
     margin-top: 40px;
     width: 550;
-    height: 920px;
+    height: 300px;
     object-fit: cover;
   }
   
