@@ -55,7 +55,7 @@ h4{
     margin: 2rem;
     margin-top: 4rem;
     text-align: center;
-    color: lightgray;
+    color: gray;
     font-size: medium;
   
 }
@@ -92,17 +92,29 @@ cursor: pointer;
 /* terminanan estilos tarjetas fotos  */
 
         /* inicia statement */
+
+        /* inicia degradado statement */
+        .cris2{
+            cursor: pointer;
+        }
+        #crisig{
+            display: flex;
+            overflow: hidden;
+
+
+
+        }
+        /* termina  degradado statement */
 /* inicia sobre mi 2 diseño mobile */
 
 
 .cris{
-
     width: 100%;
     height: auto;
-/*     padding: 30px;
-    width: 400px;
-    height: auto; */
+
 }
+
+
 .crisp{
     text-align: center;
     border-left: 0;
@@ -128,7 +140,10 @@ cursor: pointer;
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(3,25vh);
 
+
     }
+
+    
 
 /*     #cris2{
         width: 90vh;
@@ -149,18 +164,13 @@ cursor: pointer;
 }
 
 /* inicia fotografía */
-  #hfoto{
-  margin-top: 100px;
-  margin-bottom: 100px;
-
-  }
 
 
 .foto {
     display: flex;
     padding: 0px;
     width: 300%;
-    height: ;
+
     
 
 /* para el cambio infinoto:  */
