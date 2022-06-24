@@ -170,6 +170,7 @@ cursor: pointer;
     display: flex;
     padding: 0px;
     width: 300%;
+    overflow: hidden;
 
     
 
