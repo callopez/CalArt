@@ -209,8 +209,8 @@ cursor: pointer;
   /* inicia footer */
   .titulocontanto{
     margin-top: 10rem;
-    height: 10%;
-    font-size: 60px;
+/*     height: 10%;
+    font-size: 60px; */
     display: flex;
     justify-content: center;
     
